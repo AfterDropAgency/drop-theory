@@ -59,7 +59,7 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}
 #ip .pill b:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 10px var(--coral)}
 #ip .hero h1{color:var(--hd);font-size:clamp(34px,5.6vw,72px);margin:28px 0 24px}
 #ip .hero h1 .sc{display:block;margin-top:.12em;font-size:1.32em;color:var(--coral)}
-#ip .g .w{background:linear-gradient(100deg,var(--hd),var(--coral) 55%,var(--coral2));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding-right:.06em}
+#ip .g .w{background:linear-gradient(100deg,var(--hd),var(--coral) 55%,var(--coral2));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding:0 .06em .22em 0;margin-bottom:-.22em}
 #ip .hero .sub{font-size:19px;max-width:560px;margin-bottom:32px}
 @media(max-width:940px){#ip .hero .sub{margin-inline:auto}}
 #ip .checks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;font-size:15px;color:rgba(255,255,255,.82)}
@@ -202,15 +202,26 @@ html{scroll-behavior:auto}}
 </style>
 
 <div class="intro" aria-hidden="true"><div class="in-r"><i></i><i></i><i></i></div><div class="in-w">After<b>drop</b></div><div class="in-t">Ads + follow-up for streetwear brands</div></div>
-<header><div class="wrap nav">
+<style>
+#ip .hero{background:linear-gradient(180deg,rgba(8,8,10,.34) 0%,rgba(8,8,10,.5) 45%,rgba(8,8,10,.84) 100%),linear-gradient(90deg,rgba(8,8,10,.6),rgba(8,8,10,.12) 72%),url(hero.jpg) 50% 30%/cover no-repeat}
+#ip .hero .sub{color:rgba(255,255,255,.93);text-shadow:0 1px 16px rgba(0,0,0,.6)}
+#ip .hero .checks{color:rgba(255,255,255,.92)}
+#ip .hero h1{text-shadow:0 2px 26px rgba(0,0,0,.45)}
+#ip .mis{background:linear-gradient(rgba(8,8,10,.6),rgba(8,8,10,.8)),url(mission.jpg) 50% 35%/cover no-repeat}
+#ip .nl a{white-space:nowrap}
+@media(max-width:520px){#ip .nav{height:62px;gap:12px}#ip header .logo{gap:8px;min-width:0}#ip header .logo .wm{font-size:14px}#ip header .logo i{width:32px;height:32px;border-radius:10px;flex:none}#ip header .logo i svg{width:18px;height:18px}#ip .nl{flex:none}#ip .nl .btn.sm{padding:9px 14px;font-size:13.5px;border-radius:10px;white-space:nowrap}}
+@media(max-width:1120px){#ip .nl{gap:18px;font-size:14px}}
+@media(max-width:1000px){#ip .nl a:not(.btn){display:none}}
+@media(max-width:940px){#ip .hero{background-position:50% 50%,50% 50%,58% 50%}}
+</style><header><div class="wrap nav">
 <a href="#ip-top" class="logo" aria-label="Afterdrop"><i><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.6c2.3 2.7 3.5 4.7 3.5 6.3a3.5 3.5 0 1 1-7 0c0-1.6 1.2-3.6 3.5-6.3z" fill="currentColor"/><path d="M6.6 15.9c1.5 1.3 3.3 2 5.4 2s3.9-.7 5.4-2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.9 18.4c2.2 2 4.9 3.1 8.1 3.1s5.9-1.1 8.1-3.1" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></i><span class="wm" aria-hidden="true">After<b>drop</b></span></a>
-<nav class="nl"><a href="#ip-about">The problem</a><a href="#ip-services">Method</a><a href="#ip-approach">Approach</a><a href="#ip-why">Why us</a><a href="#ip-faq">FAQ</a><a class="btn sm" href="https://calendar.app.google/tjMejZqkDxst1ThP7" target="_blank" rel="noopener">Book a free call</a></nav></div></header>
+<nav class="nl"><a href="#ip-about">The problem</a><a href="#ip-study">Where you stand</a><a href="#ip-services">Method</a><a href="#ip-approach">Approach</a><a href="#ip-why">Why us</a><a href="#ip-faq">FAQ</a><a class="btn sm" href="https://calendar.app.google/tjMejZqkDxst1ThP7" target="_blank" rel="noopener">Book a free call</a></nav></div></header>
 
 <section class="hero dk" id="ip-top" onmousemove="var r=this.getBoundingClientRect(),g=this.querySelector('.gl');g.style.setProperty('--mx',event.clientX-r.left+'px');g.style.setProperty('--my',event.clientY-r.top+'px')"><div class="gl"></div><div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
 <div class="wrap hg"><div>
-<div class="pill"><b>ADS + AI</b>For streetwear &amp; apparel brands</div>
-<h1 class="rise hero-h" aria-label="Sell out more drops with AI follow-up."><span class="w" aria-hidden="true" style="--i:0">Sell</span> <span class="w" aria-hidden="true" style="--i:1">out</span> <span class="w" aria-hidden="true" style="--i:2">more</span> <span class="w" aria-hidden="true" style="--i:3">drops</span> <span class="sc g"><span class="w" aria-hidden="true" style="--i:4">with</span> <span class="w" aria-hidden="true" style="--i:5">AI</span> <span class="w" aria-hidden="true" style="--i:6">follow-up.</span></span></h1>
-<p class="sub">Afterdrop runs Meta ads that bring new buyers to your brand, then uses AI follow-up to bring back the ones who almost bought, so every drop gets more of the demand it already earned.</p>
+<div class="pill"><b>STRATEGY + ADS + AI</b>For streetwear &amp; apparel brands</div>
+<h1 class="rise hero-h" aria-label="Sell out more drops by knowing your buyer."><span class="w" aria-hidden="true" style="--i:0">Sell</span> <span class="w" aria-hidden="true" style="--i:1">out</span> <span class="w" aria-hidden="true" style="--i:2">more</span> <span class="w" aria-hidden="true" style="--i:3">drops</span> <span class="sc g"><span class="w" aria-hidden="true" style="--i:4">by</span> <span class="w" aria-hidden="true" style="--i:5">knowing</span> <span class="w" aria-hidden="true" style="--i:6">your</span> <span class="w" aria-hidden="true" style="--i:7">buyer.</span></span></h1>
+<p class="sub">We start with your brand, not your ad account: who really buys from you, the path from first look to checkout, and what your brand is missing in identity and feeling. Then we run the Meta ads and AI follow-up that close the gap.</p>
 <a class="btn" href="https://calendar.app.google/tjMejZqkDxst1ThP7" target="_blank" rel="noopener">Book a free strategy call →</a>
 <div class="checks"><span>No long-term contracts</span><span>Built only for apparel brands</span><span>Only 3 brands at a time</span></div></div>
 <div class="phone" aria-label="Example text conversation"><div class="top"><b>Example text thread</b><button class="rp" type="button" onclick="document.querySelectorAll('#ip .phone .m').forEach(function(m){m.style.animation='none';void m.offsetWidth;m.style.animation=''})">Replay</button></div>
@@ -239,6 +250,15 @@ html{scroll-behavior:auto}}
 <ul class="pr"><li><b>Abandoned carts</b><span>Someone picks a piece, gets distracted, and never comes back. Most brands have no real follow-up for them.</span></li><li><b>Stale creative</b><span>Ads that worked last month stop working. Streetwear needs a steady stream of fresh, on-brand content to stay in the feed.</span></li><li><b>One-time buyers</b><span>Great customers buy once and disappear because nobody tells them about the next drop.</span></li></ul></div>
 </div></div></section>
 
+<section class="sec dk" id="ip-study"><div class="wrap">
+<div class="hd"><div class="lab">Before any ad runs</div><h2 class="rise" aria-label="First we learn where your brand stands."><span class="w" aria-hidden="true" style="--i:0">First</span> <span class="w" aria-hidden="true" style="--i:1">we</span> <span class="w" aria-hidden="true" style="--i:2">learn</span> <span class="sc"><span class="w" aria-hidden="true" style="--i:3">where</span> <span class="w" aria-hidden="true" style="--i:4">your</span> <span class="w" aria-hidden="true" style="--i:5">brand</span> <span class="w" aria-hidden="true" style="--i:6">stands.</span></span></h2><p class="sub" style="margin-top:14px">Ads only multiply what is already there. So before anything spends, we study four things and give you what we found in writing.</p></div>
+<div class="why st4">
+<div><p class="lab" style="margin-bottom:12px">01 · Ideal customer</p><h3>Who really buys from you</h3><p>Who they are, what they wear it with, and why they pick you over the next brand. Every ad is written to that one person.</p></div>
+<div><p class="lab" style="margin-bottom:12px">02 · Funnel</p><h3>The path from first look to second order</h3><p>Ad, profile, product page, cart, checkout, next drop. We find the step where most people leave.</p></div>
+<div><p class="lab" style="margin-bottom:12px">03 · Identity</p><h3>What your brand feels like to wear</h3><p>What you stand for, and whether your content shows it. If the feeling is unclear, ads bring traffic that does not stay.</p></div>
+<div><p class="lab" style="margin-bottom:12px">04 · Offer</p><h3>The reason to buy today</h3><p>The drop, the bundle, the first-order reason. We check it holds up before you pay for traffic.</p></div>
+</div></div></section>
+
 <section class="sec mist" id="ip-calc"><div class="wrap">
 <div class="hd"><div class="lab">Run your own numbers</div><h2 class="rise" aria-label="What are abandoned carts really costing you?"><span class="w" aria-hidden="true" style="--i:0">What</span> <span class="w" aria-hidden="true" style="--i:1">are</span> <span class="w" aria-hidden="true" style="--i:2">abandoned</span> <span class="w" aria-hidden="true" style="--i:3">carts</span> <span class="sc"><span class="w" aria-hidden="true" style="--i:4">really</span> <span class="w" aria-hidden="true" style="--i:5">costing</span> <span class="w" aria-hidden="true" style="--i:6">you?</span></span></h2></div>
 <div class="calc" oninput="var c=this,g=function(k){return +c.querySelector('[data-k='+k+']').value},s=function(k,t){c.querySelector('[data-o='+k+']').textContent=t},a=g('a'),b=g('b'),v=g('c'),p=a*(b/100)*12,f=function(n){return '$'+Math.round(n).toLocaleString('en-US')};s('a',a.toLocaleString('en-US'));s('b',b+'%');s('c',f(v));c.querySelector('.big').textContent=f(p*v);c.querySelector('.pp').textContent='About '+Math.round(p).toLocaleString('en-US')+' recoverable orders a year'"><div>
@@ -260,7 +280,7 @@ html{scroll-behavior:auto}}
 <section class="sec dk" id="ip-approach"><div class="wrap">
 <div class="hd"><div class="lab">Our approach</div><h2 class="rise" aria-label="Five moves, in order."><span class="w" aria-hidden="true" style="--i:0">Five</span> <span class="w" aria-hidden="true" style="--i:1">moves,</span> <span class="sc"><span class="w" aria-hidden="true" style="--i:2">in</span> <span class="w" aria-hidden="true" style="--i:3">order.</span></span></h2></div>
 <div class="steps">
-<div class="st"><div class="lab">Step 01</div><div><h3>Understand the brand</h3><p>We study your pieces, your best sellers, your customer and what makes people want to wear you.</p></div></div>
+<div class="st"><div class="lab">Step 01</div><div><h3>Understand the brand</h3><p>Your ideal customer, your funnel, your identity and your offer, studied before anything else and handed to you in writing.</p></div></div>
 <div class="st"><div class="lab">Step 02</div><div><h3>Build the strategy</h3><p>Offer, creative angles, budget and follow-up flow, agreed before anything spends.</p></div></div>
 <div class="st"><div class="lab">Step 03</div><div><h3>Launch the system</h3><p>Tracking goes in first, then campaigns go live and cart follow-up is tested end to end. The aim: live within 7 days of getting access to your ad account.</p></div></div>
 <div class="st"><div class="lab">Step 04</div><div><h3>Monitor and optimize</h3><p>We read the numbers weekly, cut what drags and put budget behind the creative that sells.</p></div></div>
